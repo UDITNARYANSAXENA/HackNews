@@ -6,8 +6,12 @@ import storiesRoutes from './routes/storiesRoutes.js';
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: '*' })); // adjust in production
+app.use(cors({ origin: '*' }));
 app.use(express.json());
+
+app.use((req, res) => {
+  res.status(404).json({ success: false, error: `Route not found: ${req.method} ${req.originalUrl}` });
+});
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', uptime: process.uptime() });
