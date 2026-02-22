@@ -24,6 +24,7 @@ export default function Home() {
     searchTerm,
     setSearchTerm,
     setPage,
+    refetch,
   } = useStories();
 
   const handleSearch = (term) => setSearchTerm(term);
@@ -46,7 +47,6 @@ export default function Home() {
         <SearchBar
           value={searchTerm}
           onChange={handleSearch}
-          onSubmit={handleSearch}
         />
 
         <AnimatePresence mode="wait">
@@ -65,9 +65,15 @@ export default function Home() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
-              className="bg-red-950/40 border-l-4 border-red-500/70 p-6 rounded-xl shadow-sm"
+              className="bg-red-950/40 border-l-4 border-red-500/70 p-6 rounded-xl shadow-sm text-center"
             >
-              <p className="text-red-300 font-medium">{error}</p>
+              <p className="text-red-300 font-medium mb-4">{error}</p>
+              <button
+                onClick={refetch}
+                className="px-6 py-3 bg-cyan-600 text-white rounded-2xl font-medium hover:bg-cyan-700 transition"
+              >
+                Try Again
+              </button>
             </motion.div>
           ) : (
             <motion.div
@@ -88,7 +94,7 @@ export default function Home() {
                     {searchTerm ? `No results for "${searchTerm}"` : 'No new stories yet'}
                   </h3>
                   <p className="text-gray-400 max-w-md mx-auto">
-                    {searchTerm ? 'Try different keywords' : 'Fresh stories incoming...'}
+                    {searchTerm ? 'Try different keywords or clear search' : 'Fresh stories incoming...'}
                   </p>
                 </motion.div>
               ) : (

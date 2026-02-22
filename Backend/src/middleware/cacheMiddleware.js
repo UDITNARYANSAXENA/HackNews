@@ -1,29 +1,32 @@
+// src/middleware/cacheMiddleware.js
 import { getCachedData, setCachedData } from '../utils/cache.js';
 import { fetchNewestStories } from '../services/hnService.js';
 
-const CACHE_KEY_ALL = 'hn_newest_all';
-const TTL_MS = 5 * 60 * 1000; // 5 minutes
+const CACHE_KEY = 'hn_newest_all_v2';
+const TTL_MS = 15 * 60 * 1000; // 15 min
 
 export const cacheNewestStories = async (req, res, next) => {
   if (req.method !== 'GET') return next();
 
-  const search = (req.query.search || '').trim().toLowerCase();
-
-  // For simplicity we cache the full list once → then filter in controller
-  // (caching every search combination would explode memory quickly)
-  let stories = getCachedData(CACHE_KEY_ALL);
+  let stories = getCachedData(CACHE_KEY);
 
   if (!stories) {
+    console.log('[cache] Miss → fetching newest stories...');
     try {
       stories = await fetchNewestStories();
-      setCachedData(CACHE_KEY_ALL, stories, TTL_MS);
+      setCachedData(CACHE_KEY, stories, TTL_MS);
+      console.log(`[cache] Stored ${stories.length} stories`);
     } catch (err) {
-      return next(err);
+      console.error('[cache] Fetch failed:', err.message);
+      return res.status(503).json({
+        success: false,
+        error: 'Upstream HN API error – try again later'
+      });
     }
+  } else {
+    console.log('[cache] Hit');
   }
 
-  // Attach to res.locals so controller can use it without re-fetching
   res.locals.fetchedStories = stories;
-
   next();
 };

@@ -1,4 +1,4 @@
-// src/components/Pagination.jsx  (dark updated)
+// src/components/Pagination.jsx
 export default function Pagination({ current, total, onChange }) {
   if (total <= 1) return null;
 

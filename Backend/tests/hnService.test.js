@@ -1,3 +1,4 @@
+// tests/hnService.test.js (updated from provided)
 import { describe, it, beforeEach, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
 import { fetchNewestStories } from '../src/services/hnService.js';
@@ -27,7 +28,10 @@ describe('hnService.fetchNewestStories', () => {
             type: 'story',
             title: `Mock story ${id}`,
             url: `https://example.com/${id}`,
-            time: 1700000000 + Number(id)
+            time: 1700000000 + Number(id),
+            score: 10 + Number(id),
+            descendants: Number(id),
+            by: 'user' + id
           })
         };
       }

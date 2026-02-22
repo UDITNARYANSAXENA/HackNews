@@ -1,5 +1,5 @@
 // src/services/api.js
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';  // fallback to /api
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
 
 export async function getStories(params = {}) {
   let path = `${API_BASE}/stories/newest`;
@@ -13,6 +13,10 @@ export async function getStories(params = {}) {
       )
     );
     path += `?${searchParams.toString()}`;
+  }
+
+  if (import.meta.env.DEV) {
+    console.log('Fetching from:', path);
   }
 
   const res = await fetch(path, {

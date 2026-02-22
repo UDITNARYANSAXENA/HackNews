@@ -1,7 +1,7 @@
-// src/components/SearchBar.jsx  (dark updated)
+// src/components/SearchBar.jsx
 import { useState } from 'react';
 
-export default function SearchBar({ value, onChange, onSubmit }) {
+export default function SearchBar({ value, onChange }) { // Removed onSubmit for live search
   const [focused, setFocused] = useState(false);
 
   return (
@@ -10,13 +10,7 @@ export default function SearchBar({ value, onChange, onSubmit }) {
         focused ? 'scale-[1.015] shadow-2xl shadow-cyan-900/30' : 'shadow-xl shadow-black/30'
       }`}
     >
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          if (value.trim()) onSubmit(value.trim());
-        }}
-        className="relative"
-      >
+      <div className="relative">
         <div className="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
           <svg
             className={`h-5 w-5 ${focused ? 'text-cyan-400' : 'text-gray-500'}`}
@@ -41,7 +35,7 @@ export default function SearchBar({ value, onChange, onSubmit }) {
           onBlur={() => setFocused(false)}
           placeholder="Search stories (React, AI, YC, startups...)"
           className={`
-            w-full pl-12 pr-32 py-4.5 bg-gray-900 border border-gray-700 rounded-3xl
+            w-full pl-12 pr-16 py-4.5 bg-gray-900 border border-gray-700 rounded-3xl
             focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/20 text-gray-100
             placeholder-gray-500 outline-none transition-all duration-300
           `}
@@ -51,26 +45,14 @@ export default function SearchBar({ value, onChange, onSubmit }) {
           <button
             type="button"
             onClick={() => onChange('')}
-            className="absolute inset-y-0 right-32 flex items-center text-gray-500 hover:text-gray-300"
+            className="absolute inset-y-0 right-4 flex items-center text-gray-500 hover:text-gray-300"
           >
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         )}
-
-        <button
-          type="submit"
-          className={`
-            absolute right-2 top-1/2 -translate-y-1/2
-            px-7 py-3 bg-cyan-600 text-white rounded-2xl font-medium
-            hover:bg-cyan-700 active:bg-cyan-800 active:scale-95
-            transition-all duration-200 shadow-sm hover:shadow-cyan-500/30
-          `}
-        >
-          Search
-        </button>
-      </form>
+      </div>
     </div>
   );
 }

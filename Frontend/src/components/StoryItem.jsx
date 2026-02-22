@@ -8,12 +8,23 @@ const cardVariants = {
   tap: { scale: 0.985 },
 };
 
+function timeAgo(timestamp) {
+  const seconds = Math.floor((Date.now() / 1000) - timestamp);
+  let interval = seconds / 31536000;
+  if (interval > 1) return Math.floor(interval) + "y ago";
+  interval = seconds / 2592000;
+  if (interval > 1) return Math.floor(interval) + "mo ago";
+  interval = seconds / 86400;
+  if (interval > 1) return Math.floor(interval) + "d ago";
+  interval = seconds / 3600;
+  if (interval > 1) return Math.floor(interval) + "h ago";
+  interval = seconds / 60;
+  if (interval > 1) return Math.floor(interval) + "m ago";
+  return "just now";
+}
+
 export default function StoryItem({ story, index }) {
-  const domain = story.url ? new URL(story.url).hostname.replace('www.', '') : null;
-  const dateStr = new Date(story.time * 1000).toLocaleDateString(undefined, {
-    month: 'short',
-    day: 'numeric',
-  });
+  const domain = story.url ? new URL(story.url).hostname.replace('www.', '') : 'news.ycombinator.com'; // Fallback for discussions
 
   return (
     <motion.div
@@ -37,25 +48,33 @@ export default function StoryItem({ story, index }) {
               {story.title}
             </h3>
 
-            {domain && (
-              <a
-                href={story.url}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-medium text-gray-400 hover:text-cyan-400 transition-colors"
-              >
-                {domain}
-                <svg className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            )}
+            <a
+              href={story.url || `https://news.ycombinator.com/item?id=${story.id}`}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-medium text-gray-400 hover:text-cyan-400 transition-colors"
+            >
+              {domain}
+              <svg className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+
+          <div className="flex flex-col items-end gap-1 text-right text-sm text-gray-400">
+            <div className="font-medium text-cyan-400/90">
+              {story.score} {story.score === 1 ? 'point' : 'points'}
+            </div>
+            <div>
+              {story.descendants || 0} {story.descendants === 1 ? 'comment' : 'comments'}
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="px-6 py-3.5 bg-gray-950/40 border-t border-gray-800 flex items-center gap-5 text-xs font-medium text-gray-400">
+      <div className="px-6 py-3.5 bg-gray-950/40 border-t border-gray-800 flex items-center justify-between text-xs font-medium text-gray-400">
         <span>by <span className="text-gray-200 font-semibold">{story.by}</span></span>
+        <span>{timeAgo(story.time)}</span>
       </div>
     </motion.div>
   );

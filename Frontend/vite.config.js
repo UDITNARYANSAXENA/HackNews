@@ -1,9 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from '@tailwindcss/vite'   // agar is plugin ki zarurat nahi to comment kar do (normal tailwind.config.js se kaam chalta hai)
 
-
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react({
@@ -11,16 +9,16 @@ export default defineConfig({
         plugins: [['babel-plugin-react-compiler']],
       },
     }),
-     tailwindcss(),
+     tailwindcss(),   // optional — agar use nahi kar rahe to hata do
   ],
   server: {
-  port: 5173,
-  proxy: {
-    '/api': {
-      target: 'http://localhost:5000',
-      changeOrigin: true,
-      secure: false,
+    port: 5173,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
-},
 })

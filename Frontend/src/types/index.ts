@@ -1,3 +1,4 @@
+// src/types.ts (or interfaces.ts)
 export interface HNStory {
   id: number
   title: string
@@ -15,6 +16,9 @@ export interface PaginationInfo {
   totalPages: number
   hasNext: boolean
   hasPrev: boolean
+  nextPage: number | null
+  prevPage: number | null
+  nextPageUrl: string | null
 }
 
 export interface StoriesResponse {
@@ -22,5 +26,7 @@ export interface StoriesResponse {
   data: {
     stories: HNStory[]
     pagination: PaginationInfo
+    searchTerm?: string
+    fetchedAt: string | null
   }
 }
