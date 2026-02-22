@@ -2,6 +2,276 @@
   "hn_newest_all_v2": {
     "value": [
       {
+        "id": 47113633,
+        "title": "Bootstrapping Is Not Security Paranoia",
+        "url": "https://alganet.github.io/blog/2026-02-22-15-Bootstrapping-Is-Not-Security-Paranoia.html",
+        "score": 1,
+        "by": "gaigalas",
+        "time": 1771786768,
+        "descendants": 0
+      },
+      {
+        "id": 47113618,
+        "title": "Loops is a federated, open-source TikTok",
+        "url": "https://joinloops.org/",
+        "score": 1,
+        "by": "Gooblebrai",
+        "time": 1771786600,
+        "descendants": 0
+      },
+      {
+        "id": 47113612,
+        "title": "Show HN: Claude Agent SDK for Laravel – Build AI Agents with Claude Code in PHP",
+        "url": "https://github.com/mohamed-ashraf-elsaed/claude-agent-sdk-laravel",
+        "score": 1,
+        "by": "mohamedelsaed",
+        "time": 1771786535,
+        "descendants": 0
+      },
+      {
+        "id": 47113606,
+        "title": "Show HN: Git worktree automation.",
+        "url": "https://github.com/svenmalvik/manifold",
+        "score": 1,
+        "by": "svenmalvik",
+        "time": 1771786504,
+        "descendants": 0
+      },
+      {
+        "id": 47113604,
+        "title": "Show HN: OctoFlow v1.0.0 – GPU VM where the GPU runs autonomously, CPU is BIOS",
+        "url": null,
+        "score": 1,
+        "by": "mr_octopus",
+        "time": 1771786500,
+        "descendants": 0
+      },
+      {
+        "id": 47113600,
+        "title": "Phil Spencer Leaves Xbox",
+        "url": "https://www.gamespot.com/articles/phil-spencer-leaving-xbox-as-microsoft-ai-boss-takes-over/1100-6538330/",
+        "score": 2,
+        "by": "Realman78",
+        "time": 1771786448,
+        "descendants": 0
+      },
+      {
+        "id": 47113591,
+        "title": "What the U.S. Government's UFO Deep Dive Might Reveal to Americans",
+        "url": "https://www.wsj.com/politics/national-security/what-trumps-ufo-deep-dive-might-reveal-to-americans-b2268ae7",
+        "score": 2,
+        "by": "fortran77",
+        "time": 1771786406,
+        "descendants": 1
+      },
+      {
+        "id": 47113588,
+        "title": "Mechanical compression induces neuronal apoptosis in mice and humans",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.2513172122",
+        "score": 1,
+        "by": "PaulHoule",
+        "time": 1771786386,
+        "descendants": 0
+      },
+      {
+        "id": 47113577,
+        "title": "M 7.1 earthquake – 55 km NNW of Kota Belud, Malaysia",
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000sasz/executive",
+        "score": 4,
+        "by": "Bender",
+        "time": 1771786306,
+        "descendants": 0
+      },
+      {
+        "id": 47113567,
+        "title": "Show HN: Local-First Linux MicroVMs for macOS",
+        "url": "https://shuru.run",
+        "score": 1,
+        "by": "harshdoesdev",
+        "time": 1771786214,
+        "descendants": 0
+      },
+      {
+        "id": 47113563,
+        "title": "Show HN: Saga – SQLite project tracker for AI coding agents",
+        "url": "https://github.com/spranab/saga-mcp",
+        "score": 1,
+        "by": "spranab",
+        "time": 1771786198,
+        "descendants": 0
+      },
+      {
+        "id": 47113561,
+        "title": "From MVC to MVA: The Architectural Paradigm Shift for Autonomous AI Agents",
+        "url": "https://medium.com/@vinkius/from-mvc-to-mva-the-architectural-paradigm-shift-for-autonomous-ai-agents-210a4467e866",
+        "score": 1,
+        "by": "renatomarinho",
+        "time": 1771786197,
+        "descendants": 0
+      },
+      {
+        "id": 47113559,
+        "title": "NEXO a governance-first runtime for AI agents",
+        "url": "https://github.com/ribeiromatosdavi25-ai/nexo-runtime",
+        "score": 1,
+        "by": "DAVI_RMX",
+        "time": 1771786191,
+        "descendants": 1
+      },
+      {
+        "id": 47113548,
+        "title": "Tell HN: Claude mangles XML files with <name> as an XML Tag to <n>",
+        "url": null,
+        "score": 4,
+        "by": "exabrial",
+        "time": 1771786103,
+        "descendants": 0
+      },
+      {
+        "id": 47113527,
+        "title": "Linuxulator on FreeBSD Feels Like Magic",
+        "url": "https://hayzam.com/blog/02-linuxulator-is-awesome/",
+        "score": 4,
+        "by": "vermaden",
+        "time": 1771785956,
+        "descendants": 1
+      },
+      {
+        "id": 47113521,
+        "title": "Parsemail – web-based raw email parser and attachment decoder",
+        "url": "https://www.parsemail.org",
+        "score": 1,
+        "by": "zdw",
+        "time": 1771785918,
+        "descendants": 0
+      },
+      {
+        "id": 47113519,
+        "title": "Explaining Why NASA's Starliner Report Is So Bad",
+        "url": "https://www.youtube.com/watch?v=L96asfTvJ_A",
+        "score": 3,
+        "by": "Betelbuddy",
+        "time": 1771785892,
+        "descendants": 0
+      },
+      {
+        "id": 47113492,
+        "title": "HTTP/3 on FreeBSD: Getting QUIC Working with Nginx in a Bastille Jail",
+        "url": "https://blog.hofstede.it/http3-on-freebsd-getting-quic-working-with-nginx-in-a-bastille-jail/",
+        "score": 2,
+        "by": "fanf2",
+        "time": 1771785724,
+        "descendants": 0
+      },
+      {
+        "id": 47113486,
+        "title": "Let's (Re)Think PRs",
+        "url": "https://www.arunoda.me/blog/lets-rethink-prs",
+        "score": 2,
+        "by": "arunoda",
+        "time": 1771785648,
+        "descendants": 0
+      },
+      {
+        "id": 47113483,
+        "title": "CVE-2025-67736 FreePBX Authenticated SQL Injection Leads to RCE",
+        "url": "https://theyhack.me/CVE-2025-67736-FreePBX-Authenticated-SQL-Injection/",
+        "score": 1,
+        "by": "WeaklingOra",
+        "time": 1771785642,
+        "descendants": 0
+      },
+      {
+        "id": 47113469,
+        "title": "Nifty and Its Derivatives; and Arbitrage",
+        "url": "https://badpallod.substack.com/p/nifty-and-its-derivatives-and-arbitrage",
+        "score": 1,
+        "by": "kn81198",
+        "time": 1771785504,
+        "descendants": 0
+      },
+      {
+        "id": 47113466,
+        "title": "Show HN: World Monitor App",
+        "url": "https://worldmonitor.app/",
+        "score": 1,
+        "by": "Fake4d",
+        "time": 1771785484,
+        "descendants": 0
+      },
+      {
+        "id": 47113464,
+        "title": "Why Are American Passenger Trains Slow?",
+        "url": "https://americanaffairsjournal.org/2026/02/why-are-american-passenger-trains-slow/",
+        "score": 2,
+        "by": "mikebike",
+        "time": 1771785477,
+        "descendants": 0
+      },
+      {
+        "id": 47113460,
+        "title": "Monames – CodeNames with Your AI",
+        "url": "https://adpreese.github.io/monames/dist/",
+        "score": 1,
+        "by": "adpreese",
+        "time": 1771785447,
+        "descendants": 0
+      },
+      {
+        "id": 47113456,
+        "title": "CashMate – a free, ad-free expense tracker with no servers",
+        "url": "https://cashmate.periwin.com/",
+        "score": 1,
+        "by": "anilpoudyal",
+        "time": 1771785433,
+        "descendants": 1
+      },
+      {
+        "id": 47113449,
+        "title": "Ritual of the Calling of an Engineer",
+        "url": "https://en.wikipedia.org/wiki/Calling_of_an_Engineer",
+        "score": 2,
+        "by": "joebig",
+        "time": 1771785378,
+        "descendants": 0
+      },
+      {
+        "id": 47113443,
+        "title": "The Python Book = Interactive Python Tutorial from Basic to Expert",
+        "url": "https://pythoncompiler.io/python/getting-started/",
+        "score": 1,
+        "by": "selva86",
+        "time": 1771785298,
+        "descendants": 1
+      },
+      {
+        "id": 47113432,
+        "title": "Show HN: AppFeedBackScratch – Reciprocal Feedback for Indie Developers",
+        "url": "https://app-feed-back-scratch.vercel.app/",
+        "score": 1,
+        "by": "splurk",
+        "time": 1771785205,
+        "descendants": 1
+      },
+      {
+        "id": 47113408,
+        "title": "Show HN: SharpSkill – LeetCode Alternative to Optimize Success in Tech ITW",
+        "url": "https://sharpskill.fr/en",
+        "score": 1,
+        "by": "CocoZozo",
+        "time": 1771784990,
+        "descendants": 1
+      },
+      {
+        "id": 47113407,
+        "title": "Show HN: Mujoco React",
+        "url": "https://github.com/noah-wardlow/mujoco-react",
+        "score": 1,
+        "by": "noahwardlow",
+        "time": 1771784977,
+        "descendants": 0
+      },
+      {
         "id": 47113401,
         "title": "Benchmarks for concurrent hash map implementations in Go",
         "url": "https://github.com/puzpuzpuz/go-concurrent-map-bench",
@@ -23,7 +293,7 @@
         "id": 47113371,
         "title": "Affirming Life While Opposing the Ethics of Procreation",
         "url": "https://toolong.co/s/v41ufalb",
-        "score": 1,
+        "score": 2,
         "by": "a_void_sky",
         "time": 1771784700,
         "descendants": 0
@@ -38,6 +308,15 @@
         "descendants": 0
       },
       {
+        "id": 47113358,
+        "title": "Game-Ready Voxel Meshes with Low-Cost AI",
+        "url": "https://www.tyleo.com/blog/game-ready-voxel-meshes-with-low-cost-ai",
+        "score": 2,
+        "by": "tyleo",
+        "time": 1771784624,
+        "descendants": 0
+      },
+      {
         "id": 47113357,
         "title": "Show HN: 3DIMLI – No-code storefront builder for digital products (beta)",
         "url": "https://www.3dimli.com/",
@@ -45,15 +324,6 @@
         "by": "arpit077",
         "time": 1771784624,
         "descendants": 1
-      },
-      {
-        "id": 47113358,
-        "title": "Game-Ready Voxel Meshes with Low-Cost AI",
-        "url": "https://www.tyleo.com/blog/game-ready-voxel-meshes-with-low-cost-ai",
-        "score": 1,
-        "by": "tyleo",
-        "time": 1771784624,
-        "descendants": 0
       },
       {
         "id": 47113354,
@@ -86,7 +356,7 @@
         "id": 47113341,
         "title": "Giant DNA viruses encode a translation initiation complex like eukaryotic life",
         "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00055-3",
-        "score": 1,
+        "score": 2,
         "by": "PaulHoule",
         "time": 1771784539,
         "descendants": 0
@@ -131,10 +401,10 @@
         "id": 47113325,
         "title": "Fresh File Explorer – VS Code extension for navigating recent work",
         "url": "https://github.com/FreHu/vscode-fresh-file-explorer",
-        "score": 3,
+        "score": 15,
         "by": "frehu",
         "time": 1771784431,
-        "descendants": 1
+        "descendants": 4
       },
       {
         "id": 47113321,
@@ -194,7 +464,7 @@
         "id": 47113226,
         "title": "'Starkiller Phishing Service Proxies Real Login Pages, MFA",
         "url": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
-        "score": 1,
+        "score": 2,
         "by": "turbocon",
         "time": 1771783795,
         "descendants": 0
@@ -338,10 +608,10 @@
         "id": 47113022,
         "title": "Absurdity of the Term \"AI Engineer\"",
         "url": "https://gavinray97.github.io/blog/absurdity-of-ai-engineer-title",
-        "score": 1,
+        "score": 2,
         "by": "gavinray",
         "time": 1771782575,
-        "descendants": 1
+        "descendants": 3
       },
       {
         "id": 47113021,
@@ -440,7 +710,7 @@
         "score": 2,
         "by": "YuukiJyoudai",
         "time": 1771781899,
-        "descendants": 0
+        "descendants": 2
       },
       {
         "id": 47112902,
@@ -473,7 +743,7 @@
         "id": 47112858,
         "title": "Show HN: Straion – dynamic AGENTS.md/Claude.md context for AI coding agents",
         "url": "https://straion.com/",
-        "score": 3,
+        "score": 4,
         "by": "lukasholzer",
         "time": 1771781642,
         "descendants": 1
@@ -602,22 +872,22 @@
         "score": 1,
         "by": "victrious",
         "time": 1771780533,
-        "descendants": 0
+        "descendants": 1
       },
       {
         "id": 47112719,
         "title": "I Analyzed Every Nootropic Study on PubMed",
         "url": "https://outspeaker.com/post/217",
-        "score": 10,
+        "score": 17,
         "by": "paulpauper",
         "time": 1771780520,
-        "descendants": 3
+        "descendants": 10
       },
       {
         "id": 47112711,
         "title": "Increase in Malware Enabled ATM Jackpotting Incidents Across United States [pdf]",
         "url": "https://www.ic3.gov/CSA/2026/260219.pdf",
-        "score": 2,
+        "score": 3,
         "by": "Bender",
         "time": 1771780466,
         "descendants": 0
@@ -653,7 +923,7 @@
         "id": 47112667,
         "title": "Computer History Museum unveils comically large Macintosh Plus",
         "url": "https://www.tomshardware.com/pc-components/case-mods/computer-history-museum-unveils-comically-large-scale-rendition-of-the-1986-apple-macintosh-plus-towering-all-in-ones-keyboard-looks-disproportionately-huge-today",
-        "score": 2,
+        "score": 3,
         "by": "rbanffy",
         "time": 1771780115,
         "descendants": 0
@@ -680,16 +950,16 @@
         "id": 47112633,
         "title": "Altman on AI energy: it also takes 20 years of eating food to train a human",
         "url": "https://old.reddit.com/r/singularity/comments/1rb2pzf/sam_altman_people_talk_about_how_much_energy_it/",
-        "score": 28,
+        "score": 32,
         "by": "puttycat",
         "time": 1771779801,
-        "descendants": 56
+        "descendants": 64
       },
       {
         "id": 47112624,
         "title": "40 Years of Zelda",
         "url": "https://www.polygon.com/zelda-40th-anniversary/",
-        "score": 1,
+        "score": 2,
         "by": "throw0101c",
         "time": 1771779713,
         "descendants": 0
@@ -905,10 +1175,10 @@
         "id": 47112431,
         "title": "Amazon, Meta, Alphabet report plunging tax bills thanks to AI and tax changes",
         "url": "https://finance.yahoo.com/news/amazon-meta-and-alphabet-report-plunging-tax-bills-thanks-to-ai-investment-and-new-rules-in-washington-161229652.html",
-        "score": 8,
+        "score": 15,
         "by": "epistasis",
         "time": 1771778322,
-        "descendants": 6
+        "descendants": 9
       },
       {
         "id": 47112423,
@@ -1085,10 +1355,10 @@
         "id": 47112252,
         "title": "Fungicide vinclozin causes disease via germline for 20 generations in rats",
         "url": "https://pnas.org/doi/10.1073/pnas.2523071123",
-        "score": 33,
+        "score": 34,
         "by": "stevenwoo",
         "time": 1771777267,
-        "descendants": 10
+        "descendants": 11
       },
       {
         "id": 47112250,
@@ -1148,10 +1418,10 @@
         "id": 47112174,
         "title": "Fix Your Tools",
         "url": "https://ochagavia.nl/blog/fix-your-tools/",
-        "score": 71,
+        "score": 90,
         "by": "vinhnx",
         "time": 1771776751,
-        "descendants": 33
+        "descendants": 39
       },
       {
         "id": 47112169,
@@ -1355,10 +1625,10 @@
         "id": 47111981,
         "title": "Show HN: 3D Mahjong, Built in CSS",
         "url": "https://voxjong.com",
-        "score": 31,
+        "score": 48,
         "by": "rofko",
         "time": 1771775582,
-        "descendants": 20
+        "descendants": 24
       },
       {
         "id": 47111979,
@@ -1505,20 +1775,20 @@
         "descendants": 0
       },
       {
-        "id": 47111848,
-        "title": "How to Win at CORS (2021)",
-        "url": "https://jakearchibald.com/2021/cors/",
-        "score": 1,
-        "by": "mooreds",
-        "time": 1771774761,
-        "descendants": 0
-      },
-      {
         "id": 47111849,
         "title": "A Brief History of the History of Science",
         "url": "https://asteriskmag.com/issues/13/a-brief-history-of-the-history-of-science",
         "score": 2,
         "by": "Brajeshwar",
+        "time": 1771774761,
+        "descendants": 0
+      },
+      {
+        "id": 47111848,
+        "title": "How to Win at CORS (2021)",
+        "url": "https://jakearchibald.com/2021/cors/",
+        "score": 1,
+        "by": "mooreds",
         "time": 1771774761,
         "descendants": 0
       },
@@ -1769,7 +2039,7 @@
         "id": 47111681,
         "title": "Oops, You Wrote a Database (2025)",
         "url": "https://dx.tips/oops-database",
-        "score": 5,
+        "score": 10,
         "by": "tamnd",
         "time": 1771773524,
         "descendants": 1
@@ -1823,10 +2093,10 @@
         "id": 47111626,
         "title": "Xweather Live – Interactive global vector weather map",
         "url": "https://live.xweather.com/",
-        "score": 61,
+        "score": 74,
         "by": "unstyledcontent",
         "time": 1771773135,
-        "descendants": 18
+        "descendants": 20
       },
       {
         "id": 47111624,
@@ -1841,10 +2111,10 @@
         "id": 47111615,
         "title": "A tool to tell you what LLMs can run on your machine",
         "url": "https://github.com/AlexsJones/llmfit",
-        "score": 1,
+        "score": 2,
         "by": "thinkingaboutit",
         "time": 1771773031,
-        "descendants": 1
+        "descendants": 2
       },
       {
         "id": 47111607,
@@ -1895,7 +2165,7 @@
         "id": 47111531,
         "title": "Russia-linked cryptocurrency services and sanctions evasion",
         "url": "https://www.elliptic.co/blog/russia-linked-cryptocurrency-services-and-sanctions-evasion",
-        "score": 3,
+        "score": 4,
         "by": "janandonly",
         "time": 1771772500,
         "descendants": 0
@@ -1985,10 +2255,10 @@
         "id": 47111440,
         "title": "We hid backdoors in ~40MB binaries and asked AI + Ghidra to find them",
         "url": "https://quesma.com/blog/introducing-binaryaudit/",
-        "score": 131,
+        "score": 150,
         "by": "jakozaur",
         "time": 1771771844,
-        "descendants": 52
+        "descendants": 60
       },
       {
         "id": 47111431,
@@ -2003,7 +2273,7 @@
         "id": 47111420,
         "title": "Yet Another Fix Coming for Older AMD GPUs on Linux – Thanks to Valve Developer",
         "url": "https://www.phoronix.com/news/Hawaii-Macs-AMDGPU-DC-Fix",
-        "score": 21,
+        "score": 28,
         "by": "Bender",
         "time": 1771771578,
         "descendants": 0
@@ -2039,10 +2309,10 @@
         "id": 47111400,
         "title": "Man accidentally gains control of 7k robot vacuums",
         "url": "https://www.popsci.com/technology/robot-vacuum-army/",
-        "score": 104,
+        "score": 119,
         "by": "Brajeshwar",
         "time": 1771771482,
-        "descendants": 56
+        "descendants": 69
       },
       {
         "id": 47111398,
@@ -2192,7 +2462,7 @@
         "id": 47111218,
         "title": "Git's Magic Files",
         "url": "https://nesbitt.io/2026/02/05/git-magic-files.html",
-        "score": 18,
+        "score": 41,
         "by": "chmaynard",
         "time": 1771770095,
         "descendants": 8
@@ -2291,10 +2561,10 @@
         "id": 47111067,
         "title": "Iran students stage first large anti-government protests since deadly crackdown",
         "url": "https://www.bbc.com/news/articles/c5yj2kzkrj0o",
-        "score": 222,
+        "score": 243,
         "by": "tartoran",
         "time": 1771768780,
-        "descendants": 271
+        "descendants": 298
       },
       {
         "id": 47111063,
@@ -2345,7 +2615,7 @@
         "id": 47111042,
         "title": "I put New Zealand behind a $1 paywall",
         "url": "https://rename.world/",
-        "score": 47,
+        "score": 49,
         "by": "kafked",
         "time": 1771768638,
         "descendants": 12
@@ -2354,7 +2624,7 @@
         "id": 47111039,
         "title": "The AI apocalypse for enshitification has started",
         "url": "https://old.reddit.com/r/selfhosted/comments/1rbkx5e/large_us_company_came_after_me_for_releasing_a/",
-        "score": 4,
+        "score": 8,
         "by": "rhspeer",
         "time": 1771768619,
         "descendants": 1
@@ -2399,7 +2669,7 @@
         "id": 47110946,
         "title": "Show HN: TLA+ Workbench skill for coding agents (compat. with Vercel skills CLI)",
         "url": "https://github.com/younes-io/agent-skills/tree/main/skills/tlaplus-workbench",
-        "score": 13,
+        "score": 19,
         "by": "youio",
         "time": 1771767867,
         "descendants": 2
@@ -2525,7 +2795,7 @@
         "id": 47110812,
         "title": "Show HN: CanaryAI v0.2.5 – Security monitoring on Claude Code actions",
         "url": "https://github.com/jx887/homebrew-canaryai",
-        "score": 2,
+        "score": 3,
         "by": "jx887",
         "time": 1771766643,
         "descendants": 0
@@ -2543,7 +2813,7 @@
         "id": 47110781,
         "title": "Volatility: The volatile memory forensic extraction framework",
         "url": "https://github.com/volatilityfoundation/volatility3",
-        "score": 29,
+        "score": 31,
         "by": "transpute",
         "time": 1771766407,
         "descendants": 2
@@ -2723,7 +2993,7 @@
         "id": 47110647,
         "title": "Met police using AI tools supplied by Palantir to flag officer misconduct",
         "url": "https://www.theguardian.com/uk-news/2026/feb/22/met-police-ai-tools-officer-misconduct-palantir",
-        "score": 22,
+        "score": 27,
         "by": "helsinkiandrew",
         "time": 1771765199,
         "descendants": 3
@@ -2750,7 +3020,7 @@
         "id": 47110634,
         "title": "Holo v0.9: A Modern Routing Stack Built in Rust",
         "url": "https://github.com/holo-routing/holo/releases/tag/v0.9.0",
-        "score": 24,
+        "score": 25,
         "by": "WarOnMosquitoes",
         "time": 1771765055,
         "descendants": 3
@@ -2822,7 +3092,7 @@
         "id": 47110549,
         "title": "The Dance Floor Is Disappearing in a Sea of Phones",
         "url": "https://www.bloomberg.com/news/features/2026-02-20/a-boom-in-electronic-dance-music-is-changing-club-culture",
-        "score": 61,
+        "score": 64,
         "by": "blondie9x",
         "time": 1771764097,
         "descendants": 63
@@ -2849,7 +3119,7 @@
         "id": 47110533,
         "title": "Sewage Spill in the Potomac River",
         "url": "https://www.vdh.virginia.gov/news/potomac-sewage-spill/",
-        "score": 20,
+        "score": 21,
         "by": "geox",
         "time": 1771763990,
         "descendants": 5
@@ -2867,10 +3137,10 @@
         "id": 47110515,
         "title": "Attention Media ≠ Social Networks",
         "url": "https://susam.net/attention-media-vs-social-networks.html",
-        "score": 341,
+        "score": 373,
         "by": "susam",
         "time": 1771763806,
-        "descendants": 151
+        "descendants": 164
       },
       {
         "id": 47110511,
@@ -2912,7 +3182,7 @@
         "id": 47110495,
         "title": "Minions: Stripe's one-shot, end-to-end coding agents – Stripe Dot Dev Blog",
         "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
-        "score": 87,
+        "score": 89,
         "by": "kiyanwang",
         "time": 1771763640,
         "descendants": 70
@@ -2921,7 +3191,7 @@
         "id": 47110494,
         "title": "Show HN: Cheddar-bench – unsupervised benchmark for coding agents",
         "url": "https://github.com/przadka/cheddar-bench",
-        "score": 7,
+        "score": 8,
         "by": "przadka",
         "time": 1771763621,
         "descendants": 0
@@ -2957,10 +3227,10 @@
         "id": 47110473,
         "title": "What Is a Database Transaction?",
         "url": "https://planetscale.com/blog/database-transactions",
-        "score": 145,
+        "score": 155,
         "by": "0x54MUR41",
         "time": 1771763321,
-        "descendants": 23
+        "descendants": 27
       },
       {
         "id": 47110472,
@@ -3110,7 +3380,7 @@
         "id": 47110362,
         "title": "Porkbun sells out – Starts requiring Age ID despite no legal requirement",
         "url": "https://kb.porkbun.com/article/225-why-porkbun-id-verification",
-        "score": 29,
+        "score": 30,
         "by": "evolve2k",
         "time": 1771762028,
         "descendants": 15
@@ -3158,7 +3428,7 @@
         "score": 44,
         "by": "MYEUHD",
         "time": 1771761399,
-        "descendants": 44
+        "descendants": 45
       },
       {
         "id": 47110307,
@@ -3317,7 +3587,7 @@
         "id": 47110155,
         "title": "Why every automaker is quietly bringing back the inline-six engine",
         "url": "https://carbuzz.com/why-automakers-bringing-back-the-inline-six-engine/",
-        "score": 10,
+        "score": 12,
         "by": "teleforce",
         "time": 1771759591,
         "descendants": 3
@@ -3353,10 +3623,10 @@
         "id": 47110124,
         "title": "The U.S. spent $30B to ditch textbooks",
         "url": "https://fortune.com/2026/02/21/laptops-tablets-schools-gen-z-less-cognitively-capable-parents-first-time-cellphone-bans-standardized-test-scores/",
-        "score": 12,
+        "score": 14,
         "by": "_tk_",
         "time": 1771759293,
-        "descendants": 6
+        "descendants": 7
       },
       {
         "id": 47110107,
@@ -4230,278 +4500,8 @@
         "by": "dankrieg",
         "time": 1771747281,
         "descendants": 1
-      },
-      {
-        "id": 47109208,
-        "title": "Correcting the Financial Times Report about AWS, Kiro, and AI",
-        "url": "https://www.aboutamazon.com/news/aws/aws-service-outage-ai-bot-kiro",
-        "score": 1,
-        "by": "ChrisArchitect",
-        "time": 1771747150,
-        "descendants": 0
-      },
-      {
-        "id": 47109202,
-        "title": "SmallJS Release 2.0",
-        "url": "https://small-js.org/News/News.html",
-        "score": 1,
-        "by": "gjvc",
-        "time": 1771747041,
-        "descendants": 0
-      },
-      {
-        "id": 47109182,
-        "title": "Stop building LLM wrappers and aggregators, says Google VP",
-        "url": "https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/",
-        "score": 1,
-        "by": "rippeltippel",
-        "time": 1771746834,
-        "descendants": 1
-      },
-      {
-        "id": 47109174,
-        "title": "Lawyer says Google shut down his Gmail, Voice and Photos after NotebookLM upload",
-        "url": "https://discrepancyreport.com/lawyer-says-google-shut-down-his-gmail-voice-and-photos-after-notebooklm-upload/",
-        "score": 8,
-        "by": "nnx",
-        "time": 1771746810,
-        "descendants": 2
-      },
-      {
-        "id": 47109160,
-        "title": "Gemini 3.1 Pro Preview #1 on SVG Arena",
-        "url": "https://twitter.com/Designarena/status/2024953281051787279",
-        "score": 1,
-        "by": "swazzy",
-        "time": 1771746689,
-        "descendants": 0
-      },
-      {
-        "id": 47109156,
-        "title": "Microsoft-Controlled Media with Embargo and Press Operatives",
-        "url": "https://techrights.org/n/2026/02/21/Microsoft_Controlled_Media_With_Embargo_and_Press_Operatives.shtml",
-        "score": 3,
-        "by": "amcclure",
-        "time": 1771746612,
-        "descendants": 0
-      },
-      {
-        "id": 47109140,
-        "title": "The Silence of Intelligence: A Documentary of Dario Amodei",
-        "url": "https://github.com/Leading-AI-IO/the-silence-of-intelligence/blob/main/docs/en/the_silence_of_intelligence.md",
-        "score": 1,
-        "by": "rramadass",
-        "time": 1771746411,
-        "descendants": 1
-      },
-      {
-        "id": 47109138,
-        "title": "3D-printing platform rapidly produces complex electric machines",
-        "url": "https://news.mit.edu/2026/3d-printing-platform-rapidly-produces-complex-electric-machines-0218",
-        "score": 4,
-        "by": "wjSgoWPm5bWAhXB",
-        "time": 1771746389,
-        "descendants": 0
-      },
-      {
-        "id": 47109132,
-        "title": "Zigistry.dev – Search for Ziglang Packages with Ease",
-        "url": "https://zigistry.dev",
-        "score": 1,
-        "by": "TheWiggles",
-        "time": 1771746296,
-        "descendants": 0
-      },
-      {
-        "id": 47109124,
-        "title": "Show HN: I made a 1:1 clone of Front Row in SwiftUI for modern Macs",
-        "url": "https://www.youtube.com/watch?v=9HxGW2KCNVQ",
-        "score": 1,
-        "by": "JacksonDam",
-        "time": 1771746224,
-        "descendants": 1
-      },
-      {
-        "id": 47109121,
-        "title": "Show HN: I built a dependency graph for the tree of human science",
-        "url": "https://github.com/slepybear/The-Map-of-Science",
-        "score": 1,
-        "by": "sleepybear04",
-        "time": 1771746207,
-        "descendants": 0
-      },
-      {
-        "id": 47109114,
-        "title": "I Got Pwned by a Malicious AI Plugin: A Technical Breakdown",
-        "url": null,
-        "score": 3,
-        "by": "henryrobinson",
-        "time": 1771746087,
-        "descendants": 1
-      },
-      {
-        "id": 47109103,
-        "title": "Peter Steinberger accuses HN of attacking him; Twittersphere backs him",
-        "url": "https://twitter.com/Suhail/status/2025373753446990291",
-        "score": 5,
-        "by": "MaxPock",
-        "time": 1771745991,
-        "descendants": 1
-      },
-      {
-        "id": 47109092,
-        "title": "Ask HN: What are you guys building outside the hype of the IA?",
-        "url": null,
-        "score": 1,
-        "by": "01-_-",
-        "time": 1771745817,
-        "descendants": 0
-      },
-      {
-        "id": 47109076,
-        "title": "Show HN: LawClaw – Constitutional governance for AI agents (MIT)",
-        "url": null,
-        "score": 2,
-        "by": "nghiahsgs",
-        "time": 1771745697,
-        "descendants": 1
-      },
-      {
-        "id": 47109059,
-        "title": "Tech billionaires limit their children's screen time",
-        "url": "https://fortune.com/2026/02/21/peter-thiel-bill-gates-steve-jobs-steve-chen-tech-billionaires-publicly-shielding-their-children-from-tech-products-social-media/",
-        "score": 7,
-        "by": "01-_-",
-        "time": 1771745442,
-        "descendants": 1
-      },
-      {
-        "id": 47109058,
-        "title": "Quasi-Zenith Satellite System",
-        "url": "https://en.wikipedia.org/wiki/Quasi-Zenith_Satellite_System",
-        "score": 2,
-        "by": "teleforce",
-        "time": 1771745417,
-        "descendants": 0
-      },
-      {
-        "id": 47109055,
-        "title": "Scientists discover new dinosaur species deep in the Sahara Desert",
-        "url": "https://abcnews.com/International/scientists-discover-new-dinosaur-species-deep-sahara-desert/story?id=130241403",
-        "score": 2,
-        "by": "hbcondo714",
-        "time": 1771745348,
-        "descendants": 0
-      },
-      {
-        "id": 47109036,
-        "title": "'Training a Human Takes 20 Years of Food': Sam Altman on How Much Power AI Uses",
-        "url": "https://www.news18.com/world/training-a-human-takes-20-years-of-food-sam-altman-on-how-much-power-ai-consumes-ws-kl-9922309.html",
-        "score": 4,
-        "by": "AmbroseBierce",
-        "time": 1771745177,
-        "descendants": 0
-      },
-      {
-        "id": 47109031,
-        "title": "AI Tools: Slowing Down Developers Instead of Speeding Them Up – Here's Why",
-        "url": "https://medium.com/@riturajpokhriyal/why-ai-coding-tools-are-making-you-slower-and-what-actually-works-c18f432e470b",
-        "score": 1,
-        "by": "birdculture",
-        "time": 1771745133,
-        "descendants": 0
-      },
-      {
-        "id": 47109014,
-        "title": "Z-Image is an AI-powered image generator",
-        "url": "https://z-image.fun/",
-        "score": 1,
-        "by": "nikiki",
-        "time": 1771744883,
-        "descendants": 1
-      },
-      {
-        "id": 47109008,
-        "title": "Dystopia: W3C (West World WebKit Corporation) in 2024",
-        "url": "https://svgees.us/blog/dystopia.html",
-        "score": 1,
-        "by": "lioeters",
-        "time": 1771744799,
-        "descendants": 0
-      },
-      {
-        "id": 47108989,
-        "title": "Back to FreeBSD: Part 1",
-        "url": "https://hypha.pub/back-to-freebsd-part-1",
-        "score": 171,
-        "by": "enz",
-        "time": 1771744587,
-        "descendants": 80
-      },
-      {
-        "id": 47108984,
-        "title": "Node.js in the Browser",
-        "url": "https://github.com/userland-run/nano",
-        "score": 4,
-        "by": "dietz",
-        "time": 1771744552,
-        "descendants": 1
-      },
-      {
-        "id": 47108977,
-        "title": "What's the best way to learn a new language?",
-        "url": "https://www.bbc.com/future/article/20260220-whats-the-best-way-to-learn-a-new-language",
-        "score": 51,
-        "by": "1659447091",
-        "time": 1771744462,
-        "descendants": 49
-      },
-      {
-        "id": 47108943,
-        "title": "Show HN: ScreenCommander – Let LLM Agents control your desktop via CLI",
-        "url": "https://github.com/0xSMW/screencommander",
-        "score": 1,
-        "by": "aethelyon",
-        "time": 1771744142,
-        "descendants": 1
-      },
-      {
-        "id": 47108937,
-        "title": "Debian's Master Is Deleting Criticism of SystemD and Other Things",
-        "url": "https://techrights.org/n/2026/02/21/Debian_s_Master_is_Deleting_Criticism_of_SystemD_and_Other_Thin.shtml",
-        "score": 4,
-        "by": "amcclure",
-        "time": 1771744045,
-        "descendants": 0
-      },
-      {
-        "id": 47108930,
-        "title": "Show HN: This week I learned 100 English word with alarm clock",
-        "url": "https://vocabalarm.com/",
-        "score": 1,
-        "by": "tien198722",
-        "time": 1771743896,
-        "descendants": 0
-      },
-      {
-        "id": 47108912,
-        "title": "Show HN: Atlassian-CLI, unified CLI tool for Jira, Confluence, Bitbucket and JSM",
-        "url": "https://github.com/omar16100/atlassian-cli",
-        "score": 1,
-        "by": "omar16100",
-        "time": 1771743769,
-        "descendants": 0
-      },
-      {
-        "id": 47108911,
-        "title": "Louis de Broglie – Nobel Lecture [pdf]",
-        "url": "https://www.nobelprize.org/uploads/2016/04/broglie-lecture.pdf",
-        "score": 1,
-        "by": "ColinWright",
-        "time": 1771743751,
-        "descendants": 0
       }
     ],
-    "expiry": 1771785597088
+    "expiry": 1771788063558
   }
 }

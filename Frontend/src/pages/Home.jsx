@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import { useStories } from '../hooks/useStories';
 import StoryItem from '../components/StoryItem';
 import SearchBar from '../components/SearchBar';
@@ -44,19 +43,11 @@ export default function Home() {
       </header>
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <SearchBar
-          value={searchTerm}
-          onChange={handleSearch}
-        />
+        <SearchBar value={searchTerm} onChange={handleSearch} />
 
         <AnimatePresence mode="wait">
           {loading ? (
-            <motion.div
-              key="loading"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-            >
+            <motion.div key="loading" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
               <LoadingSpinner />
             </motion.div>
           ) : error ? (
@@ -76,19 +67,9 @@ export default function Home() {
               </button>
             </motion.div>
           ) : (
-            <motion.div
-              key="content"
-              variants={listVariants}
-              initial="hidden"
-              animate="visible"
-              className="space-y-7"
-            >
+            <motion.div key="content" variants={listVariants} initial="hidden" animate="visible" className="space-y-7">
               {stories.length === 0 ? (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.97 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="text-center py-32"
-                >
+                <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-32">
                   <div className="text-8xl mb-6 opacity-40">¯\_(ツ)_/¯</div>
                   <h3 className="text-2xl font-semibold text-gray-200 mb-3">
                     {searchTerm ? `No results for "${searchTerm}"` : 'No new stories yet'}
@@ -103,11 +84,7 @@ export default function Home() {
                     <StoryItem key={story.id} story={story} index={i} />
                   ))}
 
-                  <Pagination
-                    current={page}
-                    total={totalPages}
-                    onChange={handlePageChange}
-                  />
+                  <Pagination current={page} total={totalPages} onChange={handlePageChange} />
                 </>
               )}
             </motion.div>

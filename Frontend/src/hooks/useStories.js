@@ -1,4 +1,3 @@
-// src/hooks/useStories.js
 import { useState, useEffect, useCallback } from 'react';
 import { getStories } from '../services/api';
 
@@ -55,6 +54,6 @@ export function useStories() {
     searchTerm,
     setSearchTerm: changeSearch,
     setPage: changePage,
-    refetch: () => fetchStories(page, searchTerm), // Added for retry
+    refetch: () => fetchStories(page, searchTerm),
   };
 }

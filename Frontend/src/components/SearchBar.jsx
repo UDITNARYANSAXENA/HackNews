@@ -1,7 +1,6 @@
-// src/components/SearchBar.jsx
 import { useState } from 'react';
 
-export default function SearchBar({ value, onChange }) { // Removed onSubmit for live search
+export default function SearchBar({ value, onChange }) {
   const [focused, setFocused] = useState(false);
 
   return (

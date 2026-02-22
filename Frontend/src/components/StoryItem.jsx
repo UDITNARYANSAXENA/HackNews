@@ -1,4 +1,3 @@
-// src/components/StoryItem.jsx
 import { motion } from 'framer-motion';
 
 const cardVariants = {
@@ -24,7 +23,7 @@ function timeAgo(timestamp) {
 }
 
 export default function StoryItem({ story, index }) {
-  const domain = story.url ? new URL(story.url).hostname.replace('www.', '') : 'news.ycombinator.com'; // Fallback for discussions
+  const domain = story.url ? new URL(story.url).hostname.replace('www.', '') : 'news.ycombinator.com';
 
   return (
     <motion.div
@@ -61,14 +60,6 @@ export default function StoryItem({ story, index }) {
             </a>
           </div>
 
-          <div className="flex flex-col items-end gap-1 text-right text-sm text-gray-400">
-            <div className="font-medium text-cyan-400/90">
-              {story.score} {story.score === 1 ? 'point' : 'points'}
-            </div>
-            <div>
-              {story.descendants || 0} {story.descendants === 1 ? 'comment' : 'comments'}
-            </div>
-          </div>
         </div>
       </div>
 

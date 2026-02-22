@@ -1,32 +1,31 @@
-// src/types.ts (or interfaces.ts)
 export interface HNStory {
-  id: number
-  title: string
-  url?: string | null
-  score: number
-  by: string
-  time: number
-  descendants: number
+  id: number;
+  title: string;
+  url?: string | null;
+  score: number;
+  by: string;
+  time: number;
+  descendants: number;
 }
 
 export interface PaginationInfo {
-  page: number
-  limit: number
-  total: number
-  totalPages: number
-  hasNext: boolean
-  hasPrev: boolean
-  nextPage: number | null
-  prevPage: number | null
-  nextPageUrl: string | null
+  page: number;
+  limit: number;
+  total: number;
+  totalPages: number;
+  hasNext: boolean;
+  hasPrev: boolean;
+  nextPage: number | null;
+  prevPage: number | null;
+  nextPageUrl: string | null;
 }
 
 export interface StoriesResponse {
-  success: boolean
+  success: boolean;
   data: {
-    stories: HNStory[]
-    pagination: PaginationInfo
-    searchTerm?: string
-    fetchedAt: string | null
-  }
+    stories: HNStory[];
+    pagination: PaginationInfo;
+    searchTerm?: string;
+    fetchedAt: string | null;
+  };
 }

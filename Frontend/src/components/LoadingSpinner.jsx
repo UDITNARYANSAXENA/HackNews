@@ -1,4 +1,3 @@
-// src/components/LoadingSpinner.jsx
 export default function LoadingSpinner() {
   return (
     <div className="flex flex-col items-center justify-center gap-6 py-20 min-h-[60vh]">
