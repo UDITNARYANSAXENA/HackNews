@@ -94,7 +94,7 @@ export default function Home() {
 
       <footer className="mt-16 py-10 bg-gray-900/80 border-t border-gray-800 text-center text-gray-500 text-sm">
         <div className="max-w-6xl mx-auto px-4">
-          Made with ❤️ • Vite + React + Tailwind • Hacker News API
+          Made with ❤️ by <a href="https://portfolio-ljss.vercel.app/"> Udit Narayan Saxena </a> • Vite + React + Tailwind • Hacker News API
         </div>
       </footer>
     </div>
