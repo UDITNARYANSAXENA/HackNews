@@ -1,7 +1,8 @@
 // src/services/api.js
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';  // fallback to /api
+
 export async function getStories(params = {}) {
-  // Use RELATIVE path – Vite proxy will catch it
-  let path = '/api/stories/newest';
+  let path = `${API_BASE}/stories/newest`;
 
   if (Object.keys(params).length > 0) {
     const searchParams = new URLSearchParams(
@@ -11,7 +12,7 @@ export async function getStories(params = {}) {
           .map(([k, v]) => [k, String(v)])
       )
     );
-    path += '?' + searchParams.toString();
+    path += `?${searchParams.toString()}`;
   }
 
   const res = await fetch(path, {
@@ -19,7 +20,6 @@ export async function getStories(params = {}) {
     headers: {
       'Accept': 'application/json',
     },
-    // credentials: 'same-origin'   // only if you need cookies later
   });
 
   if (!res.ok) {
