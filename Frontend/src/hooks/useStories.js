@@ -9,31 +9,36 @@ export function useStories() {
   const [limit] = useState(20);
   const [totalPages, setTotalPages] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
+  const [sort, setSort] = useState('newest');
 
-  const fetchStories = useCallback(async (p = page, s = searchTerm) => {
-    setLoading(true);
-    setError(null);
+  const fetchStories = useCallback(
+    async (p = page, s = searchTerm, so = sort) => {
+      console.log('[FETCH]', { page: p, search: s.trim() || '-', sort: so });
+      setLoading(true);
+      setError(null);
 
-    try {
-      const params = { page: p, limit };
-      if (s.trim()) params.search = s.trim();
+      try {
+        const params = { page: p, limit, sort: so };
+        if (s.trim()) params.search = s.trim();
 
-      const responseData = await getStories(params);
+        const responseData = await getStories(params);
 
-      setStories(responseData?.data?.stories || []);
-      setTotalPages(responseData?.data?.pagination?.totalPages || 1);
-      setPage(responseData?.data?.pagination?.page || p);
-    } catch (err) {
-      setError(err.message || 'Failed to load stories');
-      console.error('fetch error:', err);
-    } finally {
-      setLoading(false);
-    }
-  }, [limit]);
+        setStories(responseData?.data?.stories || []);
+        setTotalPages(responseData?.data?.pagination?.totalPages || 1);
+      } catch (err) {
+        setError(err.message || 'Failed to load stories');
+        console.error('Fetch error:', err);
+        setStories([]);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [limit]
+  );
 
   useEffect(() => {
-    fetchStories(page, searchTerm);
-  }, [page, searchTerm, fetchStories]);
+    fetchStories(page, searchTerm, sort);
+  }, [page, searchTerm, sort, fetchStories]);
 
   const changePage = (newPage) => {
     if (newPage < 1 || newPage > totalPages) return;
@@ -45,6 +50,14 @@ export function useStories() {
     setPage(1);
   };
 
+  const changeSort = (newSort) => {
+    console.log('[SORT CHANGE]', { from: sort, to: newSort });
+    if (newSort !== sort) {
+      setSort(newSort);
+      setPage(1);
+    }
+  };
+
   return {
     stories,
     loading,
@@ -52,8 +65,10 @@ export function useStories() {
     page,
     totalPages,
     searchTerm,
+    sort,
+    setSort: changeSort,
     setSearchTerm: changeSearch,
     setPage: changePage,
-    refetch: () => fetchStories(page, searchTerm),
+    refetch: () => fetchStories(page, searchTerm, sort),
   };
 }

@@ -1,28 +1,24 @@
-// src/services/hnService.js
 import fetch from 'node-fetch';
-import pLimit from 'p-limit'; // Add: npm install p-limit
+import pLimit from 'p-limit';
 
 const HN_BASE = 'https://hacker-news.firebaseio.com/v0';
-const MAX_STORIES = 500; // Increased for better UX
+const MAX_STORIES = 500;
 const CONCURRENCY = 8;
 
 export async function fetchNewestStories() {
   try {
     const idsRes = await fetch(`${HN_BASE}/newstories.json`);
-    if (!idsRes.ok) {
-      throw new Error(`newstories failed: ${idsRes.status} ${idsRes.statusText}`);
-    }
+    if (!idsRes.ok) throw new Error(`newstories failed: ${idsRes.status}`);
 
     const ids = await idsRes.json();
     const limitedIds = ids.slice(0, MAX_STORIES);
 
-    const limit = pLimit(6); // 6 parallel requests
+    const limit = pLimit(6);
 
     const promises = limitedIds.map(id => limit(async () => {
       try {
         const itemRes = await fetch(`${HN_BASE}/item/${id}.json`);
         if (!itemRes.ok) return null;
-
         const item = await itemRes.json();
         if (item?.type !== 'story' || !item.title) return null;
 
@@ -43,11 +39,8 @@ export async function fetchNewestStories() {
     let results = await Promise.all(promises);
     results = results.filter(Boolean);
 
-    // Sort newest-first, with score tie-breaker
-    results.sort((a, b) => {
-      if (b.time !== a.time) return b.time - a.time;
-      return b.score - a.score;
-    });
+    // Already sort newest first (controller will handle oldest)
+    results.sort((a, b) => b.time - a.time || b.score - a.score);
 
     return results;
   } catch (err) {

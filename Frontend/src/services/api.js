@@ -5,32 +5,22 @@ export async function getStories(params = {}) {
 
   if (Object.keys(params).length > 0) {
     const searchParams = new URLSearchParams(
-      Object.fromEntries(
-        Object.entries(params)
-          .filter(([_, v]) => v !== undefined && v !== null && v !== '')
-          .map(([k, v]) => [k, String(v)])
-      )
+      Object.entries(params)
+        .filter(([_, v]) => v != null && v !== '')
+        .map(([k, v]) => [k, String(v)])
     );
-    path += `?${searchParams.toString()}`;
+    path += `?${searchParams}`;
   }
 
-  if (import.meta.env.DEV) {
-    console.log('Fetching from:', path);
-  }
+  console.log('API request:', path); // debug
 
   const res = await fetch(path, {
-    method: 'GET',
-    headers: {
-      'Accept': 'application/json',
-    },
+    headers: { 'Accept': 'application/json' },
   });
 
   if (!res.ok) {
-    let errorText = '';
-    try {
-      errorText = await res.text();
-    } catch {}
-    throw new Error(`API request failed (${res.status}): ${errorText || res.statusText}`);
+    const text = await res.text().catch(() => res.statusText);
+    throw new Error(`API error ${res.status}: ${text}`);
   }
 
   return res.json();

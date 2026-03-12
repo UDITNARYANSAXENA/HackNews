@@ -1,30 +1,36 @@
-// src/middleware/cacheMiddleware.js
 import { getCachedData, setCachedData } from '../utils/cache.js';
 import { fetchNewestStories } from '../services/hnService.js';
 
-const CACHE_KEY = 'hn_newest_all_v2';
-const TTL_MS = 15 * 60 * 1000; // 15 min
+const TTL_MS = 30 * 60 * 1000; // 30 minutes for non-search
 
 export const cacheNewestStories = async (req, res, next) => {
   if (req.method !== 'GET') return next();
 
-  let stories = getCachedData(CACHE_KEY);
+  const sort   = req.query.sort   || 'newest';
+  const search = (req.query.search || '').trim().toLowerCase();
+  const page   = req.query.page   || '1';
+  const limit  = req.query.limit  || '20';
 
-  if (!stories) {
-    console.log('[cache] Miss → fetching newest stories...');
-    try {
+  let stories;
+
+  if (!search) {
+    // Only cache when NO search (most common case)
+    const cacheKey = `hn_newest_${sort}_all_p${page}_l${limit}`;
+    console.log('[CACHE KEY]', cacheKey);
+
+    stories = getCachedData(cacheKey);
+
+    if (!stories) {
+      console.log('[CACHE MISS - no search] Fetching from HN...');
       stories = await fetchNewestStories();
-      setCachedData(CACHE_KEY, stories, TTL_MS);
-      console.log(`[cache] Stored ${stories.length} stories`);
-    } catch (err) {
-      console.error('[cache] Fetch failed:', err.message);
-      return res.status(503).json({
-        success: false,
-        error: 'Upstream HN API error – try again later'
-      });
+      setCachedData(cacheKey, stories, TTL_MS);
+    } else {
+      console.log('[CACHE HIT - no search]');
     }
   } else {
-    console.log('[cache] Hit');
+    // Search → always fresh (search is rare + dynamic)
+    console.log('[SEARCH MODE] Fresh fetch...');
+    stories = await fetchNewestStories();
   }
 
   res.locals.fetchedStories = stories;

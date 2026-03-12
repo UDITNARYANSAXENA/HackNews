@@ -1,4 +1,3 @@
-// src/utils/cache.js (renamed from previous)
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -19,7 +18,7 @@ export function getCachedData(key) {
   if (!entry) return null;
   if (Date.now() > entry.expiry) {
     cacheStore.delete(key);
-    void saveCache(); // async save
+    void saveCache();
     return null;
   }
   return entry.value;
